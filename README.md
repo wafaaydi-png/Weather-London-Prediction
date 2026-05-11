@@ -57,7 +57,9 @@ Trois modèles de régression ont été entraînés et évalués avec la métriq
 - Linear Regression
 - Random Forest Regressor
 - Gradient Boosting Regressor
+## 📷 Capture d’écran
 
+![Capture écran](weatherapp.png)
 
 
 ## 💻 Fonctionnalités
