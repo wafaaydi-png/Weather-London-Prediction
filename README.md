@@ -74,5 +74,4 @@ Trois modèles de régression ont été entraînés et évalués avec la métriq
 
 
 
-**Wafa Ayadi**  
-Data Analyst | Power BI | Python | Machine Learning
+
