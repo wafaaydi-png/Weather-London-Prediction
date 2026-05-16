@@ -1,77 +1,118 @@
-# 🌦️ Prédiction de la Température à Londres avec Machine Learning
+## 🌦️ Prédiction de la Température à Londres | Machine Learning & Flask
 
-## 📌 Description du projet
+## 📌 Présentation du projet
 
-Ce projet consiste à développer une application web interactive permettant de **prédire la température à Londres** à partir de plusieurs variables climatiques.
+Ce projet consiste en la création d’un **modèle de Machine Learning** capable de prédire la température à Londres à partir de plusieurs variables météorologiques, ainsi qu’au développement d’une **application web interactive avec Flask** permettant d’effectuer des prédictions en temps réel.
 
-L’application utilise un modèle de **Machine Learning** entraîné sur des données météorologiques historiques de Londres et déployé avec **Flask**.
-
-L’utilisateur peut saisir les données climatiques dans une interface web intuitive pour obtenir instantanément une prédiction de température.
+L’objectif est d’analyser les données climatiques historiques afin de transformer les informations météorologiques en **prédictions exploitables**, permettant d’estimer avec précision la température future.
 
 ---
 
-## 🎯 Objectif
+# 📂 Structure du projet
+![capture](Weather.png)
+## 1️⃣ Préparation et analyse des données
 
-Prédire la température à partir des variables météorologiques suivantes :
+Cette étape est dédiée au nettoyage, à la transformation et à l’exploration des données météorologiques avant l’entraînement du modèle.
 
-- ☁️ Couverture nuageuse (*Cloud Cover*)
-- ☀️ Ensoleillement (*Sunshine*)
-- 🌞 Rayonnement global (*Global Radiation*)
-- 🌡️ Température maximale (*Max Temperature*)
-- ❄️ Température minimale (*Min Temperature*)
-- 🌧️ Précipitations (*Precipitation*)
-- 📈 Pression atmosphérique (*Pressure*)
-- ⛄ Profondeur de neige (*Snow Depth*)
-- 📅 Date (Année, Mois, Jour)
+### Traitements réalisés
+
+- Nettoyage des données
+- Gestion des valeurs manquantes
+- Vérification de la cohérence des variables
+- Préparation des variables temporelles
+
+### Variables utilisées
+
+- Couverture nuageuse
+- Ensoleillement
+- Rayonnement global
+- Température maximale
+- Température minimale
+- Précipitations
+- Pression atmosphérique
+- Profondeur de neige
+- Date (année, mois, jour)
+
+### Objectif
+
+Préparer un jeu de données fiable et pertinent afin d’optimiser les performances du modèle prédictif.
 
 ---
 
-## 🤖 Modèles Machine Learning testés
+## 2️⃣ Modélisation Machine Learning
 
-Trois modèles de régression ont été entraînés et évalués avec la métrique **RMSE** :
+Cette étape permet de construire, comparer et sélectionner le modèle le plus performant pour la prédiction.
 
-| Modèle | RMSE |
-|--------|------|
-| Linear Regression | 0.8737 |
-| Random Forest Regressor | 0.8562 |
-| Gradient Boosting Regressor | **0.8335** |
+### Méthodes utilisées
 
-✅ **Le modèle Gradient Boosting a obtenu la meilleure performance et a été choisi pour le déploiement.**
+- Prétraitement des données
+- Séparation des données d’entraînement et de test
+- Entraînement et validation des modèles
+- Comparaison des performances avec la métrique RMSE
+
+### Modèles testés
+
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+### Meilleur modèle sélectionné
+
+- Gradient Boosting Regressor
+
+### Performance du modèle
+
+- RMSE : 0.8335
+
+### Objectif
+
+Développer un modèle fiable capable de prédire la température avec précision.
 
 ---
 
-## 🛠️ Technologies utilisées
+## 3️⃣ Application web Flask
 
-### Backend
+Cette partie permet d’intégrer le modèle entraîné dans une interface web interactive afin de réaliser des prédictions en temps réel.
+
+### Fonctionnalités disponibles
+
+- Saisie des données météorologiques
+- Prétraitement automatique des données
+- Prédiction instantanée de la température
+- Interface web intuitive et interactive
+
+### Objectif
+
+Rendre le modèle accessible via une application simple et intuitive pour faciliter son utilisation.
+
+---
+
+# 🛠️ Outils utilisés
+
 - Python
 - Flask
 - Pandas
 - Joblib
 - Scikit-learn
-
-### Frontend
-- HTML5
-- CSS3
-
-### Machine Learning
-- Linear Regression
-- Random Forest Regressor
-- Gradient Boosting Regressor
-## 📷 Capture d’écran
-
-![Capture écran](weatherapp.png)
-
-
-## 💻 Fonctionnalités
-
-✅ Interface web interactive  
-✅ Saisie des données climatiques  
-✅ Prédiction instantanée de température  
-✅ Design moderne avec image de fond météo  
-✅ Modèle Machine Learning déployé avec Flask  
+- HTML / CSS
 
 ---
 
+# 🎯 Résultats attendus
 
+Ce projet permet de :
 
+- Analyser des données météorologiques historiques
+- Construire un pipeline complet de Machine Learning
+- Comparer plusieurs modèles de régression
+- Déployer un modèle prédictif dans une application web
+- Réaliser des prédictions interactives de température
 
+---
+
+# 📸 Aperçu du projet
+
+## Interface de prédiction
+Cette interface permet de saisir les données climatiques et d’obtenir instantanément la température prédite par le modèle.
+
+![Interface du projet](weatherapp.png)
