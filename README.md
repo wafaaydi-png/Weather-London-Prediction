@@ -9,7 +9,7 @@ L’objectif est d’analyser les données climatiques historiques afin de trans
 ---
 
 # 📂 Structure du projet
-![capture](Weather.png)
+![capture](weatherapp.png)
 ## 1️⃣ Préparation et analyse des données
 
 Cette étape est dédiée au nettoyage, à la transformation et à l’exploration des données météorologiques avant l’entraînement du modèle.
