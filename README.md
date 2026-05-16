@@ -110,9 +110,5 @@ Ce projet permet de :
 
 ---
 
-# 📸 Aperçu du projet
 
-## Interface de prédiction
-Cette interface permet de saisir les données climatiques et d’obtenir instantanément la température prédite par le modèle.
 
-![Interface du projet](weatherapp.png)
